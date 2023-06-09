@@ -32,6 +32,23 @@
    </header> 
    <!-- main begins -->
    <main>
+    <section class="search-form">
+        <h2>Form Section</h2>
+        <form action="GET" id="meal-form">
+            <label for="search-terms">Search-terms</label>
+            <input type="text" name="search-terms" id="search-terms" placeholder="input search term" required>
+
+            <label for="category-filter">category-filter</label>
+            <select name="category-filter" id="category-filter" required>
+                <option value="option-1">Option 1</option>
+                <option value="option-2">Option 2</option>
+                <option value="option-3">Option 3</option>
+            </select>
+            <br>
+
+            <input type="submit" value="search">
+        </form>
+    </section>
     <h2></h2>
     <h3 id="starters">starters</h3>
     <h3 id="pizza">pizza</h3>
