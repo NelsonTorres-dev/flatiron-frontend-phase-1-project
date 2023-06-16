@@ -1,16 +1,16 @@
 console.log('main.js connected')
 
+//get search field
 const searchTermsInput = document.body.querySelector('#search-terms')
 
-
-
+//fetch getMealCategories data from TheMealDB API
 const getMealCategories = async () => {
     const mealCategoriesApiURL = "https://www.themealdb.com/api/json/v1/1/categories.php"
 
     try {
         const response = await fetch(mealCategoriesApiURL)
         const data = await response.json()
-        const categories = await data.categories
+        const categories = data.categories
         console.log('categories', categories)
         return categories; 
     } catch (error){
@@ -20,15 +20,15 @@ const getMealCategories = async () => {
    
 }
 //render meal categories data to dom
-const renderMealCategories = (mealCategoriesObj) => {
+const renderMealCategories = (mealCategoriesArray) => {
     console.log('renderMealCategories')
-    console.table(mealCategoriesObj)
+    console.table(mealCategoriesArray)
 
     //find and select a UL with meal categories ID dom element to append my data into 
-    const mealCategoriesList = document.querySelector('#meal-categories-list')
+    const mealCategoriesList = document.body.querySelector('#meal-categories-list')
 
     //for each element in our meal categories array
-    mealCategoriesArray.array.forEach(mealCategory => {
+    mealCategoriesArray.forEach(mealCategory => {
 
         //create wrapping list item
         const mealCategoryListItem = document.createElement('li')
@@ -65,10 +65,13 @@ const renderMealCategories = (mealCategoriesObj) => {
      
 }
 //function to call when form input is given focus
-const handleFormInputFocus = () => {
+const handleFormInputFocus = async () => {
     console.log(`focus occurred`)
 
-   getMealCategories()
+    const mealCategoriesArray = await getMealCategories()
+    renderMealCategories(mealCategoriesArray)
+
+//    getMealCategories()
 }
 
 //add event listener to search term input
