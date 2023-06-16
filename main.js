@@ -24,25 +24,45 @@ const renderMealCategories = (mealCategoriesObj) => {
     console.log('renderMealCategories')
     console.table(mealCategoriesObj)
 
-    //find and select a dom element to append my data into 
+    //find and select a UL with meal categories ID dom element to append my data into 
+    const mealCategoriesList = document.querySelector('#meal-categories-list')
 
     //for each element in our meal categories array
-        //create a wrapping element maybe <article> class of card
+    mealCategoriesArray.array.forEach(mealCategory => {
+
+        //create wrapping list item
+        const mealCategoryListItem = document.createElement('li')
+        mealCategoryListItem.className = 'meal-category-card'
+        mealCategoriesList.appendChild(mealCategoryListItem)
+        //create a wrapping element maybe <li> class of card
         //append the article.card to selected dom element
         //display the category name, image, and description
             //image
                 //create an img element
+                const mealCategoryImg = document.createElement('img')
                 //set img src to category thumbnail url
+                mealCategoryImg.src = mealCategory?.strCategoryThumb
                 //give it a mobile friendly max width of like 300px
+                mealCategoryImg.width = 300
                 //appendChild the image to our card
+                mealCategoryListItem.appendChild(mealCategoryImg)
         //name
             //create h4 element
+            const mealCategoryName = document.createElement('h4')
             //set h4 element textContent to be meal category  name
+            mealCategoryName.textContent = mealCategory?.strCategory
             //appendChild the image to out card
+            mealCategoryListItem.appendChild(mealCategoryName)
         //description
-            //create a p element
+        //create a p element
+        const mealCategoryDescription = document.createElement('p')
             //set p element textContent to be meal category descripton
+            mealCategoryDescription.textContent = mealCategory?.strCategoryDescription
             //appendChild the p to our card
+            mealCategoryListItem.appendChild(mealCategoryDescription)
+    });
+    
+     
 }
 //function to call when form input is given focus
 const handleFormInputFocus = () => {
