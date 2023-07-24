@@ -1,0 +1,43 @@
+{
+    "teams": [
+        {
+            "id": 1,
+            "name": "Barcelona",
+            "year_founded": 1899,
+            "coach": "Xavie Hernandez",
+            "keeper": "Ter Stegen"
+        },
+
+        {
+            "id": 2,
+            "name": "Madrid",
+            "year_founded": 1902,
+            "coach": "Carlo Ancelotti",
+            "keeper": "Casillas"
+        },
+
+        {
+            "id": 3,
+            "name": "Manchester United",
+            "year_founded": 1878,
+            "coach": "Eric Ten Hag",
+            "keeper": "Andre Onana"
+        },
+
+        {
+            "id": 4,
+            "name": "Inter Milan",
+            "year_founded": 1908,
+            "coach": "Simone",
+            "keeper": "Filip"
+        },
+
+        {
+            "id": 5,
+            "name": "Manchester city",
+            "year_founded": 1880,
+            "coach": "Pep Guardiola",
+            "keeper": "Zack"
+        }
+    ]
+}
