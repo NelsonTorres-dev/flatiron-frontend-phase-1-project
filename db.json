@@ -3,15 +3,15 @@
     {
       "id": 1,
       "imageURl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_y0F6qTsKyJ1DvzPw8E6JPMx9JdKTvC53_g&usqp=CAU",
-      "name": "Barcelona",
-      "year_founded": "founded in 1899 by a group of Swiss, Catalan, German, and English footballers led by Joan Gamper.",
+      "name": "FC Barcelona",
+      "year_founded": "Founded in 1899 by a group of Swiss, Catalan, German, and English footballers led by Joan Gamper.",
       "coach": "Xavie Hernandez",
       "keeper": "Ter Stegen"
     },
     {
       "id": 2,
       "imageURl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-C_V4LUXBFy0jk5pu52ixR3cVBRGlKhZOrA&usqp=CAU",
-      "name": "Madrid",
+      "name": "Real Madrid",
       "year_founded": "The club was officially founded in 1902 and joined the Royal Spanish Football Federation in 1909.",
       "coach": "Carlo Ancelotti",
       "keeper": "Casillas"
@@ -35,34 +35,10 @@
     {
       "id": 5,
       "imageURl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvzLm3qRPrCbXa21MyRy2RUuWKiwXeC1T95w&usqp=CAU",
-      "name": "Manchester city",
+      "name": "Manchester City",
       "year_founded": "Founded in 1880 as St. Mark's (West Gorton), they became Ardwick Association Football Club in 1887 and Manchester City in 1894",
       "coach": "Pep Guardiola",
       "keeper": "Zack Steffen"
-    },
-    {
-      "name": "Inter Miami",
-      "year_founded": "2022",
-      "coach": "Gerardo Martino",
-      "keeper": "Nick Marman",
-      "imageURl": "https://logos-world.net/wp-content/uploads/2020/06/Inter-Miami-C.F.-Logo.png",
-      "id": 6
-    },
-    {
-      "name": "Cat",
-      "year_founded": "1989",
-      "coach": "Dog",
-      "keeper": "Rat",
-      "imageURl": "https://cdn.pixabay.com/photo/2014/11/30/14/11/cat-551554_640.jpg",
-      "id": 7
-    },
-    {
-      "name": "lion",
-      "year_founded": "1987",
-      "coach": "tiger",
-      "keeper": "elephant",
-      "imageURl": "",
-      "id": 8
     }
   ]
 }

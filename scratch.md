@@ -3,7 +3,7 @@ Requirement steps:
 html css js
 publick api db.json
 iterating through array (map, forEach, filter)
-neet to use array methos
+need to use array methos
 single page
 30+ commits
 render data in html DOM

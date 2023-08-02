@@ -11,6 +11,7 @@ const fetchTeams = () => {
 }
 
 fetchTeams()
+
 const form = document.querySelector('#addNewTeam')
 const addNewTeam = (e) =>{
     e.preventDefault()
@@ -20,7 +21,7 @@ const addNewTeam = (e) =>{
     const keeper = document.querySelector('#keeper').value
     const imageURl = document.querySelector('#image').value
 
-    const newTeam = { name,  year_founded,  coach,  keeper,  imageURl}
+const newTeam = { name,  year_founded,  coach,  keeper,  imageURl}
     fetch('http://localhost:3000/teams',{
         method: 'POST',
         headers: {
@@ -40,12 +41,14 @@ form.addEventListener('submit', addNewTeam)
 //Dom Render Functions
 function renderAllTeams(team){
     //build teams
-    let card = document.createElement('li')
-    card.className = 'card'
+    let divElement = document.createElement('div')
+    divElement.className = 'card'
     let h3 = document.createElement('h3')
     h3.textContent = team.name
     let img = document.createElement('img')
     img.src = team.imageURl
+    let button = document.createElement('button')
+    button.textContent = 'hide'
     let div = document.createElement('div')
     div.className = 'content'
     let p = document.createElement('p')
@@ -53,8 +56,10 @@ function renderAllTeams(team){
     let teamCoachP = document.createElement('p')
     teamCoachP.textContent = team.coach
 
-    card.append(h3,img,div)
+    divElement.append(h3,img,div,button)
     div.append(p,teamCoachP)
+    
+    document.querySelector('#teams-list').appendChild(divElement)
     
     // card.innerHTML = ` 
     //     <h3>${team.name}</h3>
@@ -65,7 +70,7 @@ function renderAllTeams(team){
     //     </div>
     //     `
     //Add teams card to DOM
-    document.querySelector('#teams-list').appendChild(card)
+    
 }
 
 //render teams to page
