@@ -8,5 +8,5 @@ Requirement steps:
 []30+ commits
 [x]render data in html DOM
 [x]5 objects with at least 3 attributes
-[]two event listeners
+[x]two event listeners
 []read me

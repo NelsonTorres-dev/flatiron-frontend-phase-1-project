@@ -46,7 +46,7 @@ const renderAllTeams = (team) => {
     let img = document.createElement('img')
     img.src = team.imageURl
     let button = document.createElement('button')
-    button.textContent = 'hide'
+    button.textContent = 'Show Information'
     button.className = 'btn'
     let div = document.createElement('div')
     div.className = 'content'
@@ -58,8 +58,20 @@ const renderAllTeams = (team) => {
     divElement.append(h3,img,div,button)
     div.append(p,teamCoachP)
     
-    document.querySelector('#teams-list').appendChild(divElement)   
+    //hide div element
+    
+    div.style.display = 'none'
+    
+    
+
+    //click button to show information in p tags
+   button.addEventListener('click', () => {
    
+   div.style.display = div.style.display === 'none' ? 'block' : 'none';
+   button.textContent = div.style.display === 'none' ? 'Watch Again' : 'Hide Information'
+   })
+
+   document.querySelector('#teams-list').appendChild(divElement)   
    
 }
 
