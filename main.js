@@ -36,6 +36,9 @@ const newTeam = { name,  year_founded,  coach,  keeper,  imageURl}
 
 form.addEventListener('submit', addNewTeam)
 
+
+
+
 //Dom Render Functions
 const renderAllTeams = (team) => {
     //build teams

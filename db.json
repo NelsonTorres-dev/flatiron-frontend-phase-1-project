@@ -39,6 +39,14 @@
       "year_founded": "Founded in 1880 as St. Mark's (West Gorton), they became Ardwick Association Football Club in 1887 and Manchester City in 1894",
       "coach": "Pep Guardiola",
       "keeper": "Zack Steffen"
+    },
+    {
+      "name": "Bayern Munich",
+      "year_founded": "Bayern Munich was founded in 1900 and has become Germany's most famous and successful football club. Almost all of Bayern's success has come since the 1960s. Bayern Munich was formed when members of the MTV 1879 Munich sports club broke away to form their own club.",
+      "coach": "Thomas Tuchel",
+      "keeper": "Manuel Peter Neuer",
+      "imageURl": "https://logoeps.com/wp-content/uploads/2012/04/bayern-munchen-logo.png",
+      "id": 6
     }
   ]
 }
