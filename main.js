@@ -65,13 +65,12 @@ const renderAllTeams = (team) => {
     
     div.style.display = 'none'
     
-    
-
     //click button to show information in p tags
    button.addEventListener('click', () => {
    
    div.style.display = div.style.display === 'none' ? 'block' : 'none';
    button.textContent = div.style.display === 'none' ? 'Watch Again' : 'Hide Information'
+   
    })
 
    document.querySelector('#teams-list').appendChild(divElement)   
