@@ -58,16 +58,15 @@ const renderAllTeams = (team) => {
     let teamCoachP = document.createElement('p')
     teamCoachP.textContent = team.coach
 
+
     divElement.append(h3,img,div,button)
     div.append(p,teamCoachP)
     
     //hide div element
-    
     div.style.display = 'none'
     
     //click button to show information in p tags
    button.addEventListener('click', () => {
-   
    div.style.display = div.style.display === 'none' ? 'block' : 'none';
    button.textContent = div.style.display === 'none' ? 'Watch Again' : 'Hide Information'
    
